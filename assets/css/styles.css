@@ -273,6 +273,7 @@ body.is-soon .color-bar span:nth-child(4) { animation-delay: .65s; }
 /* ---------- small screens ---------- */
 @media (max-width: 560px) {
   .intro__controls { right: 16px; }
+  .soon__pillars { display: grid; grid-template-columns: repeat(2, auto); justify-content: center; }
 }
 
 /* ---------- reduced motion ---------- */
