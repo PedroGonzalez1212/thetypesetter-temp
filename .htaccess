@@ -1,0 +1,26 @@
+# The Typesetter — temporary page
+
+# Force HTTPS (enable once SSL is active in Latin Cloud)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+AddType video/mp4  .mp4
+AddType video/webm .webm
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType video/mp4   "access plus 1 month"
+  ExpiresByType video/webm  "access plus 1 month"
+  ExpiresByType image/jpeg  "access plus 1 month"
+  ExpiresByType image/png   "access plus 1 month"
+  ExpiresByType text/css    "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/html   "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
+
+Options -Indexes
