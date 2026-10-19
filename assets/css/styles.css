@@ -179,8 +179,9 @@ body.is-soon .intro { opacity: 0; visibility: hidden; pointer-events: none; }
   font-size: .95rem;
   font-weight: 600;
 }
-.soon__pillars li { display: inline-flex; align-items: center; gap: .5em; }
-.soon__pillars li::before {
+.soon__pair { display: flex; gap: inherit; white-space: nowrap; }
+.soon__pillars [role="listitem"] { display: inline-flex; align-items: center; gap: .5em; }
+.soon__pillars [role="listitem"]::before {
   content: "";
   width: .6em; height: .6em;
   border-radius: 50%;
@@ -273,7 +274,6 @@ body.is-soon .color-bar span:nth-child(4) { animation-delay: .65s; }
 /* ---------- small screens ---------- */
 @media (max-width: 560px) {
   .intro__controls { right: 16px; }
-  .soon__pillars { display: grid; grid-template-columns: repeat(2, auto); justify-content: center; }
 }
 
 /* ---------- reduced motion ---------- */

@@ -104,12 +104,17 @@
       <h1 class="soon__title">We’re building <strong>something new</strong>.</h1>
       <p class="soon__text">After 20 years making global communication easy, our identity evolves. Same essence, new ways forward.</p>
 
-      <ul class="soon__pillars" aria-label="Positioning">
-        <li class="c-green">Any Language</li>
-        <li class="c-pink">Every Format</li>
-        <li class="c-blue">All Tools</li>
-        <li class="c-orange">One Team</li>
-      </ul>
+      <!-- items grouped in pairs so the row breaks 4 or 2+2, never 3+1 -->
+      <div class="soon__pillars" role="list" aria-label="Positioning">
+        <div class="soon__pair">
+          <span role="listitem" class="c-green">Any Language</span>
+          <span role="listitem" class="c-pink">Every Format</span>
+        </div>
+        <div class="soon__pair">
+          <span role="listitem" class="c-blue">All Tools</span>
+          <span role="listitem" class="c-orange">One Team</span>
+        </div>
+      </div>
 
       <div class="soon__actions">
         <a class="btn-primary" id="linkedinBtn" href="https://www.linkedin.com/company/the-typesetter/" target="_blank" rel="noopener">
