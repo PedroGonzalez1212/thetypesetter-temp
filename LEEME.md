@@ -30,5 +30,5 @@ El video no siempre arranca abriendo `index.html` con doble clic (file://). Usá
 ## Pendientes
 - Textos provisorios: reemplazar cuando Candelaria pase el copy.
 - Verificar datos de contacto del JSON-LD (index.html): teléfonos, direcciones, email.
-- Tipografía: Titillium Web (Google Fonts). Museo Sans Rounded necesita licencia web.
+- Tipografía: Museo Sans Rounded (principal, `assets/fonts/`, woff2: 100, 300, 500, 700, 900, 1000; hoy el título usa 300 y 700) y Titillium Web (Google Fonts, secundaria) para el resto. DM Serif Text (regular e itálica) también está cargada para usar más adelante.
 - Paleta: tomada del PNG del logo; confirmar contra el brandbook refreshed.
