@@ -8,6 +8,10 @@
 AddType video/mp4  .mp4
 AddType video/webm .webm
 
+# Serve text files as UTF-8 (the server default is ISO-8859-1, which overrides <meta charset>)
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .json .svg .txt .xml
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType video/mp4   "access plus 1 month"
